@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     style="@android:style/Theme.Light"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editTextCustomerName"
+        style="@android:style/Theme.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTitle"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCustomerName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextCustomerName"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bt_login"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonExit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_login_exit" />
+
+</RelativeLayout>

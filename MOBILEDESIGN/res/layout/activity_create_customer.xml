@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Theme.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        style="@android:style/Theme.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTitle"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:drawableLeft="@drawable/ic_customer"
+        android:ems="10"
+        android:hint="@string/customername"
+        android:inputType="textCapCharacters"
+        android:maxLines="2" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/customer_information"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blue_3"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/imageButtonExit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_login_exit" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        style="@android:style/Theme.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText01"
+        android:layout_alignRight="@+id/EditText01"
+        android:layout_below="@+id/EditText01"
+        android:layout_marginTop="15dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawableLeft="@drawable/ic_sales"
+        android:ems="10"
+        android:hint="@string/channelSale"
+        android:inputType="textCapCharacters"
+        android:maxLength="3"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        style="@android:style/Theme.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:layout_alignRight="@+id/editTextUserName"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_card"
+        android:ems="10"
+        android:hint="@string/idCard"
+        android:inputType="numberSigned"
+        android:maxLength="12" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText02"
+        android:layout_alignRight="@+id/EditText02"
+        android:layout_below="@+id/EditText02"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bt_login"
+        android:text="@string/create"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="23dp"
+        android:text="@string/review"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue_3"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/imageButtonExit"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:lines="2"
+        android:text="@string/example"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue_3"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/textViewTitle"
+        android:layout_alignParentLeft="true"
+        android:background="@color/blue_3" />
+
+</RelativeLayout>
