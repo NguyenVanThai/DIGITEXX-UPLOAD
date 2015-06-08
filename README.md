@@ -1,2 +1,2 @@
 # DIGITEXX-UPLOAD
-i
+Application use upload Image from client to server.
